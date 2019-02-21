@@ -30,3 +30,12 @@ console.log("Buzz")
 console.log(nums)
 }
 };
+
+//Exercise 3 - Create a Chessboard that will diplay # # # # in rows
+
+let numberOfRows = 10;
+let height = 4 * numberOfRows;
+
+for (let chessboardLine = "# # # #"; chessboardLine.length <= height; chessboardLine+= "\n# # # #"){
+  console.log(chessboardLine)
+}
