@@ -39,3 +39,20 @@ let height = 4 * numberOfRows;
 for (let chessboardLine = "# # # #"; chessboardLine.length <= height; chessboardLine+= "\n# # # #"){
   console.log(chessboardLine)
 }
+
+//that created a simple pattern. Here is how to create a program that will create a grid based on size input
+
+let size = 10;
+let board = "";
+
+for (let x = 0; x < size; x++) {
+for (let y = 0; y < size; y++) {
+if ((x + y) % 2 == 0) {
+  board += " ";
+} else {
+  board += "#";
+}
+}
+board += "\n";
+}
+console.log(board)
